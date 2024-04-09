@@ -1,0 +1,43 @@
+img{
+  height: 1250px;
+  width: 1250px; 
+} 
+#gift{
+height: 130px;
+width: 130px;
+}
+.image-container {
+    position: relative;
+    display: inline-block; /* Ensure the container fits its contents */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(33, 31, 31); /* Text color */
+    font-size: 80px; /* Text size */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font family */
+     background-color: rgba(141, 140, 145, 0.272);/* Background color with opacity */
+    padding: 10px 20px; /* Padding around text */
+}
+.animated-text {
+    animation: slideIn 3s ease forwards;
+    font-size: 40px;
+    font-style: italic;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
